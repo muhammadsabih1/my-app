@@ -34,12 +34,16 @@ function App() {
   return (
     <div className="App">
       <Alert alert={alert} />
-      <Navbar title="Sabih's Text Utilities App" mode={mode} toggleMode={toggleMode} />
-      <br/>
+      <Navbar
+        title="Sabih's Text Utilities App"
+        mode={mode}
+        toggleMode={toggleMode}
+      />
+      <br />
       <Form showAlert={showAlert} mode={mode} />
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
