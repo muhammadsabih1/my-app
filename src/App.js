@@ -1,10 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
-import About from "./components/About";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -36,12 +34,12 @@ function App() {
   return (
     <div className="App">
       <Alert alert={alert} />
-      <Navbar
-        title="Sabih's Text Utilities App"
-        mode={mode}
-        toggleMode={toggleMode}
-      />
+      <Navbar title="Sabih's Text Utilities App" mode={mode} toggleMode={toggleMode} />
+      <br/>
       <Form showAlert={showAlert} mode={mode} />
+      <br/>
+      <br/>
+      <br/>
     </div>
   );
 }
