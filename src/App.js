@@ -35,25 +35,13 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        <Alert alert={alert} />
-        <Navbar
-          title="Sabih's Text Utilities App"
-          mode={mode}
-          toggleMode={toggleMode}
-        />
-        <div className="container my-3">
-          <Routes>
-            {" "}
-            {/* Replacing Switch with Routes */}
-            <Route path="/about" element={<About />} />
-            <Route
-              path="/"
-              element={<Form showAlert={showAlert} mode={mode} />}
-            />
-          </Routes>
-        </div>
-      </Router>
+      <Alert alert={alert} />
+      <Navbar
+        title="Sabih's Text Utilities App"
+        mode={mode}
+        toggleMode={toggleMode}
+      />
+      <Form showAlert={showAlert} mode={mode} />
     </div>
   );
 }
