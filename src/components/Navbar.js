@@ -49,3 +49,9 @@ export default function Navbar(props) {
     </nav>
   );
 }
+
+Navbar.defaultProps = {
+  title: "My Website",
+  mode: "light",
+  toggleMode: () => {},
+};
